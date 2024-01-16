@@ -1,0 +1,40 @@
+---
+export interface Props {
+    date: string;
+    title: string;
+    description: string;
+}
+const { date, title, description } = Astro.props;
+---
+
+<span
+    class="absolute flex items-center justify-center size-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
+>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-code"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="#0D47A1"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+            d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path
+            d="M14 4l-4 16"></path></svg
+    >
+</span>
+<span>
+    <h3 class="mb-1 text-lg font-semibold text-blue-300">
+        {title}
+    </h3>
+    <time
+        class="block mb-2 text-sm font-normal leading-none text-white/80"
+        >{date}</time
+    >
+    <p class="text-base font-normal text-white text-pretty">
+        {description}
+    </p>
+</span>

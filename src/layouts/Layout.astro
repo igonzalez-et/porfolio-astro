@@ -1,6 +1,11 @@
 ---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import '@fontsource-variable/onest';
+
 interface Props {
 	title: string;
+	description: string;
 }
 
 const { title } = Astro.props;
@@ -17,35 +22,34 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<div class="relative w-full bg-black">
+			<div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#124B89_0.2px,transparent_0.7px),linear-gradient(to_bottom,#124B89_0.2px,transparent_0.7px)] bg-[size:14px_24px]">
+			</div>
+			<Header />
+			<slot />
+			<Footer />
+		</div>
 	</body>
 </html>
 <style is:global>
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+		color-scheme: light dark;
 	}
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
+		font-family: 'Onest Variable', system-ui, sans-serif;
+		scroll-behavior: smooth;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+
+	body {
+		display: flex;
+		flex-direction: column;
+ 		height: 100vh;
 	}
+
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+	}
+	
 </style>
