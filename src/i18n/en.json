@@ -1,0 +1,35 @@
+{
+    "SEO_TITLE": "Iker Gonzalez Portfolio - Web Developer/Programmer",
+    "SEO_DESCRIPTION": "Hire Iker Gonzalez to create and update your web or mobile application.",
+    "H1_APP": "Hi, I am Iker González",
+    "BADGE_APP": "Available to work",
+    "H2_SPAN_1": "year of experience",
+    "H2_SPAN_2": "Web developer",
+    "H2_SPAN_3": "from",
+    "H2_SPAN_4": "Barcelona, Spain",
+    "SECTION_CONTAINER_TITLE_2": "Experience",
+    "SECTION_CONTAINER_TITLE_3": "Projects",
+
+    "HEADER": {
+        "ANCHOR_1": "Home",
+        "ANCHOR_2": "Experience",
+        "ANCHOR_3": "Projects"
+    },
+
+    "EXPERIENCE": {
+        "TITLE_2": "Full Stack Web Developer at Afers Digitals S.L.",
+        "DESCRIPTION_2": "The project I carried out in this company was the creation, development and implementation of the company's new website.",
+        "TITLE_1": "Computer technician at Afers Digitals S.L.",
+        "DESCRIPTION_1": ""
+    },
+
+    "PROJECTS": {
+        "TITLE_AFERS": "Afers Digitals S.L. Web",
+        "DESCRIPTION_AFERS": "Created from Wordpress. It is a website that provides information to the customer about the computer device store.",
+        "IMAGE_HOVER_TEXT_AFERS": "Visit web"
+    },
+
+    "FOOTER": {
+        "PARAGRAPH_1": "Iker Gonzalez Portfolio"
+    }
+}

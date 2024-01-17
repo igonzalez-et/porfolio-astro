@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import Badge from '../components/Badge.astro';
+import LinkedInIcon from '../components/icons/LinkedIn.astro';
+import GitHubIcon from '../components/icons/GitHub.astro';
+import GmailIcon from '../components/icons/Gmail.astro';
+import SocialLinks from '../components/SocialLinks.astro';
+import Experience from '../components/Experience.astro';
+import Projects from '../components/Projects.astro';
+import { getI18N } from '../i18n/';
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+
+---
+
+<Layout 
+	title={i18n.SEO_TITLE}
+	description={i18n.SEO_DESCRIPTION}
+	>
+	<main class="px-4">
+		<SectionContainer>
+			<img 
+			class="rounded-full size-24 mb-4" 
+			src="/public/images/iker.webp" 
+			alt="iker photo" />
+			<h1 class="text-white text-xl md:text-3xl lg:text-5xl font-bold flex flex-col md:flex-row gap-x-4 pb-6 lg:pb-10 ">
+				{i18n.H1_APP}
+				<div class="flex justify-center items-center my-2 md:my-0">
+					<Badge>{i18n.BADGE_APP}</Badge>
+				</div>
+			</h1>
+			<h2 class="text-white/80 text-md md:text-xl lg:text-2xl text-center lg:text-start text-wrap mb-8 max-w-[700px]">
+				+<span class="text-white text-[2rem] lg:text-[2.5rem] font-bold">1</span> {i18n.H2_SPAN_1}</span>. 
+				<span class="text-blue-300">{i18n.H2_SPAN_2}</span> 
+				{i18n.H2_SPAN_3} <span class="text-yellow-200">{i18n.H2_SPAN_4}</span>.
+			</h2>
+
+			<ul class="flex flex-row w-full justify-center lg:justify-start">
+				<li class="flex justify-between flex-wrap">
+					<SocialLinks href="https://www.linkedin.com/in/iker-gonzález-lumbreras-92b39426b/">
+						<LinkedInIcon class="size-4 md:size-6" />LinkedIn
+					</SocialLinks>
+					<SocialLinks href="https://github.com/igonzalez-et">
+						<GitHubIcon class="size-4 md:size-6" />GitHub
+					</SocialLinks>
+					<SocialLinks href="mailto:igonzalezlum@gmail.com">
+						<GmailIcon class="size-4 md:size-6" />igonzalezlum@gmail.com
+					</SocialLinks>
+				</li>
+			</ul>
+		</SectionContainer>
+
+		<SectionContainer id="experience">
+			<h2 class="text-3xl font-semibold mb-6">{i18n.SECTION_CONTAINER_TITLE_2}</h2>
+			<Experience />
+		</SectionContainer>
+
+		<SectionContainer id="projects">
+			<h2 class="text-3xl font-semibold mb-6">{i18n.SECTION_CONTAINER_TITLE_3}</h2>
+			<Projects />
+		</SectionContainer>
+	</main>

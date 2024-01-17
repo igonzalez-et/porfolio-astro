@@ -1,0 +1,36 @@
+{
+    "SEO_TITLE": "Porfolio de Iker González - Desarrollador/Programador Web",
+    "SEO_DESCRIPTION": "Contrata a Iker González para crear y actualizar tu aplicación web o móvil.",
+    "H1_APP": "Hey, soy Iker González",
+    "BADGE_APP": "Disponible para trabajar",
+    "H2_SPAN_1": "año de experiencia",
+    "H2_SPAN_2": "Desarrollador web",
+    "H2_SPAN_3": "de",
+    "H2_SPAN_4": "Barcelona, España",
+    "SECTION_CONTAINER_TITLE_2": "Experiencia",
+    "SECTION_CONTAINER_TITLE_3": "Proyectos",
+
+    "HEADER": {
+        "ANCHOR_1": "Inicio",
+        "ANCHOR_2": "Experiencia",
+        "ANCHOR_3": "Proyectos"
+    },
+
+    "EXPERIENCE": {
+        "TITLE_2": "Desarrollador Web Full Stack en Afers Digitals S.L.",
+        "DESCRIPTION_2": "El proyecto que realicé en esta empresa fue la creación, desarrollo e implementación del nuevo sitio web de la empresa.",
+        "TITLE_1": "Técnico informático en Afers Digitals S.L.",
+        "DESCRIPTION_1": ""
+    },
+
+    "PROJECTS": {
+        "TITLE_AFERS": "Afers Digitals S.L. Web",
+        "DESCRIPTION_AFERS": "Creado desde Wordpress. Es una página web que proporciona la información al cliente sobre la tienda de dispositivos informáticos.",
+        "IMAGE_HOVER_TEXT_AFERS": "Visita la web"
+    },
+
+    "FOOTER": {
+        "PARAGRAPH_1": "Porfolio de Iker González"
+    }
+
+}

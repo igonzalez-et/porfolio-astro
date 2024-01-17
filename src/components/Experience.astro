@@ -1,23 +1,27 @@
 ---
 import type { Code, Debug } from "astro:components"
 import ExperienceItem from "./ExperienceItem.astro"
+import { getI18N } from '../i18n/';
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
 
 const EXPERIENCE = [
     {
         date: '2022 - 2023',
-        title: 'Programador Web Full Stack en Afers Digitals S.L.',
-        description: 'El proyecto que realicé en esta empresa fue la creación, desarrollo e implementación del nuevo sitio web de la empresa.',
+        title: i18n.EXPERIENCE.TITLE_2,
+        description: i18n.EXPERIENCE.DESCRIPTION_2,
     },
     {
         date: '2020-2021',
-        title: 'Técnico informático en Afers Digitals S.L.',
-        description: '',
+        title: i18n.EXPERIENCE.TITLE_1,
+        description: i18n.EXPERIENCE.DESCRIPTION_1,
     },
     
 ]
 ---
 
-<ol class="relative border-s border-gray-200 dark:border-gray-700">
+<ol class="relative border-s border-gray-200 dark:border-gray-700 mx-4">
     {
         EXPERIENCE.map(experiencie => (
         <li class="mb-10 ms-6">            
